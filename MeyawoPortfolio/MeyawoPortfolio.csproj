@@ -531,6 +531,8 @@
     <Content Include="Views\Default\ServicePartial.cshtml" />
     <Content Include="Views\Default\ProjectPartial.cshtml" />
     <Content Include="Views\Default\TestmonialPartial.cshtml" />
+    <Content Include="Views\Default\ContactPartial.cshtml" />
+    <Content Include="Views\Category\AddCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -15,6 +15,20 @@ namespace MeyawoPortfolio.Controllers
             var values = db.TblCategory.ToList();
             return View(values);
         }
-       
+        [HttpGet]
+
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+        [HttpPost]
+
+        public ActionResult AddCategory(TblCategory p)
+        {
+            db.TblCategory.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
     }
 }

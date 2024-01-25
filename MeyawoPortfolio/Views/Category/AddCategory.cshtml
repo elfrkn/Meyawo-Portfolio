@@ -1,0 +1,21 @@
+﻿@model MeyawoPortfolio.Models.TblCategory
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Yeni Kategori Ekle</h2>
+
+<form  class="form-group" method="post">
+    <div>
+        <label>Kategori Adı</label>
+        <input type="text" class="form-control" name="CategoryName" style="border:solid"/>
+
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-info">Kategori Ekle</button>
+    </div>
+   
+</form>
+

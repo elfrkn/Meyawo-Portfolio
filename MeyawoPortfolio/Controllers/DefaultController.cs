@@ -55,6 +55,11 @@ namespace MeyawoPortfolio.Controllers
 
         }
 
+        public PartialViewResult ContactPartial()
+        {
+            return PartialView();
+        }
+
 
 
     }
