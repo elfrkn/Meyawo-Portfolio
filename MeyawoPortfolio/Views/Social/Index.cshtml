@@ -7,10 +7,9 @@
 <h2>Sosyal Medya Listesi</h2>
 <table class="table table-bordered">
     <tr>
-        <th>Sosyal Media ID</th>
+        <th>#</th>
         <th>Başlık</th>
         <th>Url</th>
-        <th>İkon</th>
         <th>Sil</th>
         <th>Güncelle</th>
 
@@ -21,13 +20,12 @@
             <td>@item.SocialMediaID</td>
             <td>@item.Title</td>
             <td>@item.SocialMediaUrl</td>
-            <td>@item.Icon</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Social/DeleteSocial/@item.SocialMediaID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Social/UpdateSocial/@item.SocialMediaID" class="btn btn-success">Güncelle</a></td>
 
         </tr>
     }
 </table>
-<a href="#" class="btn btn-primary">Yeni Sosyal Medya Girişi</a>
+<a href="/Social/CreateSocial/" class="btn btn-primary">Yeni Sosyal Medya Girişi</a>
 
 

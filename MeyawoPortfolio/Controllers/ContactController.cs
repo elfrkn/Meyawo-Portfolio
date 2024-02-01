@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MeyawoPortfolio.Models;
+using Microsoft.Ajax.Utilities;
 
 namespace MeyawoPortfolio.Controllers
 {
@@ -14,6 +15,14 @@ namespace MeyawoPortfolio.Controllers
         {
             var values = db.TblContact.ToList();
             return View(values);
+        }
+
+        public ActionResult DeleteContact(int id)
+        {
+            var value = db.TblContact.Find(id);
+            db.TblContact.Remove(value);
+            db.SaveChanges();
+            return View(value);
         }
     }
 }

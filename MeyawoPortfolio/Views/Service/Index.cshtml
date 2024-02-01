@@ -10,8 +10,6 @@
     <tr>
         <th>Hizmet ID</th>
         <th>Hizmet Adı</th>
-        <th>Hizmet İçeriği</th>
-        <th>Hizmet Resim</th>
         <th>Sil</th>
         <th>Güncelle</th>
 
@@ -21,12 +19,10 @@
         <tr>
             <td>@item.ServiceID</td>
             <td>@item.Title</td>
-            <td>@item.Description</td>
-            <td>@item.ImageUrl</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Service/DeleteService/@item.ServiceID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Service/UpdateService/@item.ServiceID" class="btn btn-success">Güncelle</a></td>
 
         </tr>
     }
 </table>
-<a href="#" class="btn btn-primary">Yeni Hizmet Girişi</a>
+<a href="/Service/CreateService/" class="btn btn-primary">Yeni Hizmet Girişi</a>

@@ -1,0 +1,29 @@
+﻿@model MeyawoPortfolio.Models.TblEducation
+@{
+    ViewBag.Title = "UpdateEducation";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Eğitim Güncelleme Sayfası</h2>
+
+<form method="post">
+
+    <label>Eğitim Id</label>
+    <input type="text" class="table table-bordered" value="@Model.EducationID" name="EducationID" />
+    <br />
+    <label>Okul Adı</label>
+    <input type="text" class="table table-bordered" value="@Model.Title1" name="Title1" />
+    <br />
+    <label>Bölüm Adı</label>
+    <input type="text" class="table table-bordered" value="@Model.Title2" name="Title2" />
+    <br />
+    <label>Genel Not Ortalaması</label>
+    <input type="text" class="table table-bordered" value="@Model.GNO" name="GNO" />
+    <br />
+    <label>Tarih</label>
+    <input type="text" class="table table-bordered" value="@Model.Date" name="Date" />
+    <br />
+
+
+    <button class="btn btn-info">Eğitimi Güncelle</button>
+</form>
