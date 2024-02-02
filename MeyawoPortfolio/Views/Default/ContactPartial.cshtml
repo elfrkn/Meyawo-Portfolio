@@ -1,4 +1,4 @@
-﻿@model List<MeyawoPortfolio.Models.TblContact>
+﻿
 
 <section class="section" id="contact">
     <div class="container text-center">
@@ -7,21 +7,22 @@
             Bana ulaşın
         </h6>
         <!-- contact form -->
-        <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+        <form method="post" class="contact-form col-md-10 col-lg-8 m-auto">
             <div class="form-row">
                 <div class="form-group col-sm-6">
-                    <input type="text" size="50" class="form-control" placeholder="İsminiz" required>
+                    <input type="text" size="50" name="NameSurname" class="form-control" placeholder="İsminiz" required>
                 </div>
                 <div class="form-group col-sm-6">
-                    <input type="email" class="form-control" placeholder="Email Adresiniz" requried>
+                    <input type="email" name="Email" class="form-control" placeholder="Email Adresiniz" requried>
                 </div>
                 <div class="form-group col-sm-12">
-                    <textarea name="comment" id="comment" rows="6" class="form-control"
+                    <textarea name="Message" id="comment" rows="6" class="form-control"
                               placeholder="Mesajınızı yazınız"></textarea>
                 </div>
-                <div class="form-group col-sm-12 mt-3">
-                    <input type="submit" value="Mesaj Gönder" class="btn btn-outline-primary rounded">
-                </div>
+                @*<div class="form-group col-sm-12 mt-3">
+            <input type="submit" value="Mesaj Gönder" class="btn btn-outline-primary rounded">
+        </div>*@
+            <button class="btn btn-info">Mesaj Gönder</button>
             </div>
         </form><!-- end of contact form -->
     </div><!-- end of container -->

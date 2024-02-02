@@ -19,7 +19,8 @@ namespace MeyawoPortfolio.Controllers
             ViewBag.flutterProjectCount = db.TblProject.Where(x => x.ProjectCategory == 1).Count();
             ViewBag.IsNotReadMessageCount = db.TblContact.Where(x => x.IsRead == false).Count();
             ViewBag.lastProjectName = db.LastProjectName().FirstOrDefault();
-
+            ViewBag.testimonialCount = db.TblTestimonial.Count();
+            ViewBag.serviceCount = db.TblService.Count();
 
             return View();
         }

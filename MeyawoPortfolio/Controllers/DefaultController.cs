@@ -41,7 +41,8 @@ namespace MeyawoPortfolio.Controllers
             var values = db.TblService.ToList();
             return PartialView(values);
         }
-        public PartialViewResult ProjectPartial() {
+        public PartialViewResult ProjectPartial()
+        {
 
             var values = db.TblProject.ToList();
             return PartialView(values);
@@ -54,13 +55,21 @@ namespace MeyawoPortfolio.Controllers
             return PartialView(values);
 
         }
-
+        [HttpGet]
         public PartialViewResult ContactPartial()
         {
             return PartialView();
         }
+        [HttpPost]
 
+        public PartialViewResult ContactPartial(TblContact p)
 
-
+        {
+            var value = db.TblContact.Add(p);
+            value.SendDate = DateTime.Now;
+            value.IsRead = false;
+            db.SaveChanges();
+            return PartialView(value);
+        }
     }
 }

@@ -2343,9 +2343,13 @@
     <Content Include="Templates\Portfolio\assets\imgs\analytics.svg" />
     <Content Include="Templates\Portfolio\assets\imgs\avatar2.jpg" />
     <Content Include="Templates\Portfolio\assets\imgs\avatar3.jpg" />
+    <Content Include="Templates\Portfolio\assets\imgs\elif.jpg" />
     <Content Include="Templates\Portfolio\assets\imgs\folio-1.jpg" />
+    <Content Include="Templates\Portfolio\assets\imgs\folio-1.png" />
     <Content Include="Templates\Portfolio\assets\imgs\folio-2.jpg" />
+    <Content Include="Templates\Portfolio\assets\imgs\folio-2.png" />
     <Content Include="Templates\Portfolio\assets\imgs\folio-3.jpg" />
+    <Content Include="Templates\Portfolio\assets\imgs\folio-3.png" />
     <Content Include="Templates\Portfolio\assets\imgs\header.jpg" />
     <Content Include="Templates\Portfolio\assets\imgs\img-1.jpg" />
     <Content Include="Templates\Portfolio\assets\imgs\img-2.jpg" />
@@ -2379,6 +2383,7 @@
     <Content Include="Templates\sidebar-09\css\bootstrap\_media.css" />
     <Content Include="Templates\sidebar-09\css\style.css" />
     <Content Include="Templates\sidebar-09\images\bg_1.jpg" />
+    <Content Include="Templates\sidebar-09\images\elif.jpg" />
     <Content Include="Templates\sidebar-09\images\logo.jpg" />
     <Content Include="Templates\sidebar-09\index.html" />
     <Content Include="Templates\sidebar-09\js\bootstrap.min.js" />
